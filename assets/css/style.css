@@ -1,0 +1,9 @@
+@media print {
+    @page {
+        size: auto;
+        margin: 0;
+    }
+    .noprint {
+        visibility: hidden;
+    }
+}
