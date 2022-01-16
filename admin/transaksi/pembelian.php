@@ -99,7 +99,7 @@ if (!isset($_SESSION['role'])) {
                                     <?php }
                                 } else { ?>
                                     <tr>
-                                        <td colspan="5">
+                                        <td colspan="6">
                                             <h4 class="text-center">Data Kosong</h4>
                                         </td>
                                     </tr>

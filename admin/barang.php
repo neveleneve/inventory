@@ -62,7 +62,7 @@ if (!isset($_SESSION['role'])) {
                                     <th class="text-center font-weight-bold">No.</th>
                                     <th class="text-center font-weight-bold">Nama Barang</th>
                                     <th class="text-center font-weight-bold">Harga</th>
-                                    <th class="text-center font-weight-bold">Satuan</th>
+                                    <!-- <th class="text-center font-weight-bold">Satuan</th> -->
                                     <th class="text-center font-weight-bold">Stok</th>
                                     <th class="text-center font-weight-bold">Aksi</th>
                                 </tr>
@@ -84,7 +84,7 @@ if (!isset($_SESSION['role'])) {
                                             <td><?= $no++ ?></td>
                                             <td><?= ucwords(strtolower($key['nama'])) ?></td>
                                             <td>Rp. <?= number_format($key['harga'], 0, ',', '.') ?></td>
-                                            <td><?= $key['stok'] ?></td>
+                                            <!-- <td><?= $key['stok'] ?></td> -->
                                             <td><?= $key['stok'] ?></td>
                                             <td>
                                                 <a class="btn btn-sm btn-primary" href="lihat/index?id=<?= $key['id'] ?>">Lihat</a>
@@ -94,7 +94,7 @@ if (!isset($_SESSION['role'])) {
                                     <?php }
                                 } else { ?>
                                     <tr>
-                                        <td colspan="5\6">
+                                        <td colspan="6">
                                             <h4 class="text-center">Data Kosong</h4>
                                         </td>
                                     </tr>

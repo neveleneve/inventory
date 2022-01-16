@@ -75,18 +75,26 @@ function bulan($angka)
 <body>
     <div class="container mt-3">
         <div class="row mb-2">
-            <div class="col-12">
+            <div class="col-2">
+                <img src="../../assets/img/kcb.jpeg" alt="" style="width: 100%;">
+            </div>
+            <div class="col-8">
                 <?php
                 if (!isset($_POST['bulan'])) {
                     echo '<h2 class="text-center font-weight-bold">Laporan Pengeluaran Barang Tahunan</h2>';
+                    echo '<h4 class="text-center font-weight-bold">PT. Kepri Citra Buana</h4>';
                     echo '<h6 class="text-center font-weight-bold">Tahun ' . $_POST['tahun'] . '</h6>';
                 } else {
                     echo '<h2 class="text-center font-weight-bold">Laporan Pengeluaran Barang Bulanan</h2>';
+                    echo '<h4 class="text-center font-weight-bold">PT. Kepri Citra Buana</h4>';
                     echo '<h6 class="text-center font-weight-bold">Bulan ' . bulan($_POST['bulan']) . ' ' . $_POST['tahun'] . '</h6>';
                 }
                 ?>
             </div>
+            <div class="col-2">
+            </div>
         </div>
+        <div class="dropdown-divider border border-dark mb-5"></div>
         <div class="row justify-content-center mb-2">
             <div class="col-10">
                 <table class="table table-bordered">
@@ -186,6 +194,16 @@ function bulan($angka)
                         </tr>
                     </tfoot>
                 </table>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-4 text-center">
+                <h6 class="font-weight-bold">Pimpinan</h6>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h6>(............................)</h6>
             </div>
         </div>
         <div class="row justify-content-center">
